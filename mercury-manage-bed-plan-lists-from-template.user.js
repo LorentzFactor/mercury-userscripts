@@ -1,0 +1,83 @@
+// ==UserScript==
+// @name         Mercury Manage Bed Space/Plan Lists From Template
+// @namespace    https://github.com/curtgrimes/mercury-userscripts
+// @version      1.0
+// @description  Adds a "manage bed space/plan lists" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view.
+// @author       Curt Grimes
+// @match        *://*/FeatureBuilder/EditTemplate/?templateid=*
+// @grant        none
+// @run-at document-idle
+// @updateURL    https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
+// @downloadURL  https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
+// ==/UserScript==
+
+$(function(){
+    var configureBedSpacePlanListsButton = $('<li class="IWantMenuChoice"><a href="#">manage bed space/plan lists</a></li>');
+
+    configureBedSpacePlanListsButton.find('a').on('click', function(e){
+        startConfigureBedSpacePlanLists({
+            templateid: getUrlParameter('templateid'),
+            templatename: $('#txtFeatureName').data('OriginalName'),
+            templatelinkidentifier: $('#txtLinkIdentifier').val(),
+        });
+
+        setTimeout(hideIWantToMenu, 500);
+        window.scrollTo(0, 0); // scroll to top
+    });
+
+    // Insert the new button after the "configure template data" button.
+    configureBedSpacePlanListsButton.insertAfter($('#menuTemplateDefinition').parent('.IWantMenuChoice'));
+
+    function startConfigureBedSpacePlanLists({templateid, templatename, templatelinkidentifier}) {
+        // Copyright Residential Management Systems (RMS), Raleigh, North Carolina, USA.
+        ServerAction(
+            "TemplateList",
+            "CheckTemplateDeleted",
+            {templateid},
+            function Success(sReturn) {
+                if (sReturn == 'success') {
+                    MakeDialog(
+                        'dlgAddRoomPlanList',
+                        {templateid, templatename},
+                        function Success(sResult) {
+                            var item = {
+                                NomRoomList: sResult.NomRoomList,
+                                NomPlanList: sResult.NomPlanList,
+                                linkIdentifier: templatelinkidentifier,
+                                TemplateId: templateid
+                            };
+                            ServerAction(
+                                "TemplateList",
+                                "SaveRoomPlanList",
+                                item,
+                                function (sResult) {
+                                    if (sResult != "SUCCESS") {
+                                        alert(sResult);
+                                    }
+                                },
+                                null
+                            );
+                        },
+                        null,
+                        function Error(sResult) {
+                            alert(sResult);
+                        },
+                        false
+                    );
+                }
+                else {
+                    alert(sReturn);
+                }
+            },
+            null
+        );
+    }
+
+    function getUrlParameter(name) {
+        // Credit: https://davidwalsh.name/query-string-javascript
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+});

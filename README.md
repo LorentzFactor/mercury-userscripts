@@ -16,6 +16,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
     | Userscript                 | About                      | Install                    |
     | -------------------------- |:-------------------------- |:-------------------------- |
     | Configure availability from template | [About][about-caft] | [Install][install-caft] |
+    | Manage bed space/plan lists from template | [About][about-mbspl] | [Install][install-mbspl] |
     | Preview/run template user quick picks | [About][about-uqp] | [Install][install-uqp]  |
     | Run from template          | [About][about-rft]         | [Install][install-rft]     |
     | Search on enter            | [About][about-soe]         | [Install][install-soe]     |
@@ -29,6 +30,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [about-caft]: #configure-availability-from-template
 [about-soe]: #search-on-enter
 [about-vub]: #view-used-by-for-all-filters-at-once
+[about-mbspl]: #manage-bed-spaceplan-lists-from-template
 
 [install-tqs]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.user.js
 [install-uqp]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.user.js
@@ -36,7 +38,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [install-caft]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-configure-availability-from-template.user.js
 [install-soe]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js
 [install-vub]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-filter-view-used-by-for-all.user.js
-
+[install-mbspl]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
 
 ## Userscripts
 
@@ -45,6 +47,12 @@ These userscripts are meant to offer some solutions to common inconveniences you
 ![Configure availability from template](docs/images/mercury-configure-availability.png?raw=true "Configure availability from template")
 
 Adds a "Configure Availability" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view, not from the template editing screen.
+
+### Manage bed space/plan lists from template
+
+![Manage bed space/plan lists from template](docs/images/mercury-manage-bed-plan-lists-from-template.png?raw=true "Manage bed space/plan lists from template")
+
+Adds a "manage bed space/plan lists" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view.
 
 ### Preview/run template user quick picks
 
