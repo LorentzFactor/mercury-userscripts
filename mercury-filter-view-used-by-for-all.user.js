@@ -25,21 +25,26 @@
         // Add the button
         document.querySelector('#ToolButtonExportGrid').insertAdjacentHTML('afterEnd', '<a href="#" onclick="return false;" id="CustomViewUsedByForAll" class="RMSGridButtonContainer " title="View \'Used by\' for all..."><span class="RMSGridButton RMSGridImportGear">View \'Used by\' for all...</span></a>');
 
-
-        document.querySelector('#CustomViewUsedByForAll').addEventListener('click', function(){
-            $("<div style='padding:20px'>This will take a while. You can let the page run in the background while this happens. Continue?</div>").dialog({
-                modal: true,
-                buttons : {
-                    "Yes" : function() {
-                        $(this).dialog("close");
-                        parseRow(0);
-                    },
-                    "No" : function() {
-                        $(this).dialog("close");
+        if (window.customIsLoadingUsedByFilters) {
+            alert("You're already doing this. To stop it, reload the page and start over.");
+        }
+        else {
+            document.querySelector('#CustomViewUsedByForAll').addEventListener('click', function(){
+                $("<div style='padding:20px'>This will take a while. You can let the page run in the background while this happens. Continue?</div>").dialog({
+                    modal: true,
+                    buttons : {
+                        "Yes" : function() {
+                            $(this).dialog("close");
+                            parseRow(0);
+                            window.customIsLoadingUsedByFilters = true;
+                        },
+                        "No" : function() {
+                            $(this).dialog("close");
+                        }
                     }
-                }
+                });
             });
-        });
+        }
     }
 
     function parseRow(rowNumber) {
