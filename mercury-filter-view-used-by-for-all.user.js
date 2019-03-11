@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mercury Filters View 'Used by' for All
 // @namespace    https://github.com/curtgrimes/mercury-userscripts
-// @version      1.0
+// @version      1.0.1
 // @description  Load the 'used by' information for all filters automatically. It will still take a long time, but you don't need to manually click on each filter and look for this information, and wait for each lookup to end before going to the next. You can let it run in the background while you do something else.
 // @author       Curt Grimes
 // @match        *://*/Filter/Index/
