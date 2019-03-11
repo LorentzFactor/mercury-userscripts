@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mercury Preview/Run Template User Quick Picks
 // @namespace    https://github.com/curtgrimes/mercury-userscripts
-// @version      1.0.1
+// @version      1.0.2
 // @description  Adds one-click user 'quick picks' to the initial preview/run template screen.
 // @author       Curt Grimes
 // @match        *://*/RunFeature/RunFeature?ftl=*
@@ -33,20 +33,22 @@
 			<ul> \
 				<li v-for="(user, index) in users" :key="index"> \
 					<div v-if="user.editing"> \
-					<input \
-						ref="addUserInputRMSId" \
-						placeholder="RMS ID" \
-						type="text" \
-						v-model="user.rmsIdBeingEdited" \
-					/> \
-					<input \
-						ref="addUserInputName" \
-						placeholder="Quick pick name" \
-						type="text" \
-						v-model="user.nameBeingEdited" \
-					/> \
-					<button type="button" @click="save(index)">Save</button> \
-					<button type="button" @click="user.editing = false">Cancel</button> \
+					<form @submit="save(index)"> \
+						<input \
+							ref="addUserInputRMSId" \
+							placeholder="RMS ID" \
+							type="text" \
+							v-model="user.rmsIdBeingEdited" \
+						/> \
+						<input \
+							ref="addUserInputName" \
+							placeholder="Quick pick name" \
+							type="text" \
+							v-model="user.nameBeingEdited" \
+						/> \
+						<button type="submit">Save</button> \
+						<button type="button" @click="user.editing = false">Cancel</button> \
+					</form> \
 					</div> \
 					<div v-else-if="editMode"> \
 						{{ user.name }} <small>(RMS ID {{ user.rmsId }})</small> \
