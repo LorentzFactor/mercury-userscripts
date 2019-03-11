@@ -21,30 +21,32 @@
         }
     },500);
 
+    var isCheckingFilters = false;
+
     function init() {
         // Add the button
         document.querySelector('#ToolButtonExportGrid').insertAdjacentHTML('afterEnd', '<a href="#" onclick="return false;" id="CustomViewUsedByForAll" class="RMSGridButtonContainer " title="View \'Used by\' for all..."><span class="RMSGridButton RMSGridImportGear">View \'Used by\' for all...</span></a>');
 
-        if (window.customIsLoadingUsedByFilters) {
-            alert("You're already doing this. To stop it, reload the page and start over.");
-        }
-        else {
-            document.querySelector('#CustomViewUsedByForAll').addEventListener('click', function(){
+        document.querySelector('#CustomViewUsedByForAll').addEventListener('click', function(){
+            if (isCheckingFilters) {
+                alert("You're already doing this. To stop it, reload the page and try again.");
+            }
+            else {
                 $("<div style='padding:20px'>This will take a while. You can let the page run in the background while this happens. Continue?</div>").dialog({
                     modal: true,
                     buttons : {
                         "Yes" : function() {
-                            $(this).dialog("close");
+                            isCheckingFilters = true;
                             parseRow(0);
-                            window.customIsLoadingUsedByFilters = true;
+                            $(this).dialog("close");
                         },
                         "No" : function() {
                             $(this).dialog("close");
                         }
                     }
                 });
-            });
-        }
+            }
+        });
     }
 
     function parseRow(rowNumber) {
