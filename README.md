@@ -4,6 +4,13 @@ A collection of userscripts that add functionality to the [RMS Mercury](https://
 These userscripts are meant to offer some solutions to common inconveniences you may encounter if you are a Mercury power user. 
 
 
+* [Installation](#installation)
+* [Userscripts](#userscripts)
+    + [Template quick search](#template-quick-search)
+    + [Preview/run template user quick picks](#preview-run-template-user-quick-picks)
+    + [Run from template](#run-from-template)
+    + [Configure availability from template](#configure-availability-from-template)
+
 ## Installation
 1. Install the Tampermonkey extension in your browser:
 	* [Tampermonkey for Chrome](https://tampermonkey.net/?ext=dhdg&browser=chrome)
