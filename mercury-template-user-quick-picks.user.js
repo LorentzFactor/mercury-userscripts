@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mercury Preview/Run Template User Quick Picks
 // @namespace    https://github.com/curtgrimes/mercury-userscripts
-// @version      1.0
+// @version      1.0.1
 // @description  Adds one-click user 'quick picks' to the initial preview/run template screen.
 // @author       Curt Grimes
 // @match        *://*/RunFeature/RunFeature?ftl=*
@@ -31,42 +31,42 @@
 			<p v-if="editMode"><strong>Edit quick picks</strong></p> \
 			<p v-else><strong>Quick pick a user</strong></p> \
 			<ul> \
-			<li v-for="(user, index) in users" :key="index"> \
-				<div v-if="user.editing"> \
-				<input \
-					ref="addUserInputRMSId" \
-					placeholder="RMS ID" \
-					type="text" \
-					v-model="user.rmsIdBeingEdited" \
-				/> \
-				<input \
-					ref="addUserInputName" \
-					placeholder="Quick pick name" \
-					type="text" \
-					v-model="user.nameBeingEdited" \
-				/> \
-				<button type="button" @click="save(index)">Save</button> \
-				<button type="button" @click="user.editing = false">Cancel</button> \
-				</div> \
-				<div v-else-if="editMode"> \
-				{{ user.name }} <small>(RMS ID {{ user.rmsId }})</small> \
-				<span style="font-size:80%"><a href="javascript:void(0)" @click="user.editing = true">Edit</a> \
-				&nbsp;&nbsp;<a href="javascript:void(0)" @click="deleteUser(index)" >Delete</a></span> \
-				</div> \
-				<div v-else> \
-				<a href="javascript:void(0)" @click="runAsUser(user)">{{user.name}}</a> \
-				<small>(RMS ID {{ user.rmsId }})</small> \
-				</div> \
-			</li> \
+				<li v-for="(user, index) in users" :key="index"> \
+					<div v-if="user.editing"> \
+					<input \
+						ref="addUserInputRMSId" \
+						placeholder="RMS ID" \
+						type="text" \
+						v-model="user.rmsIdBeingEdited" \
+					/> \
+					<input \
+						ref="addUserInputName" \
+						placeholder="Quick pick name" \
+						type="text" \
+						v-model="user.nameBeingEdited" \
+					/> \
+					<button type="button" @click="save(index)">Save</button> \
+					<button type="button" @click="user.editing = false">Cancel</button> \
+					</div> \
+					<div v-else-if="editMode"> \
+						{{ user.name }} <small>(RMS ID {{ user.rmsId }})</small> \
+						<span style="font-size:80%"><a href="javascript:void(0)" @click="user.editing = true">Edit</a> \
+						&nbsp;&nbsp;<a href="javascript:void(0)" @click="deleteUser(index)" >Delete</a></span> \
+					</div> \
+					<div v-else> \
+						<a href="javascript:void(0)" @click="runAsUser(user)">{{user.name || user.rmsId}}</a> \
+						<small>(RMS ID {{ user.rmsId }})</small> \
+					</div> \
+				</li> \
 			</ul> \
 			<p v-if="!editMode" style="font-size:90%"> \
-			<a href="javascript:void(0)" @click="addUser()">Add...</a> \
+				<a href="javascript:void(0)" @click="addUser()">Add...</a> \
 			</p> \
 			<p v-if="!editMode" style="font-size:90%"> \
-			<a href="javascript:void(0)" @click="editMode = true">Edit...</a> \
+				<a href="javascript:void(0)" @click="editMode = true">Edit...</a> \
 			</p> \
 			<p v-if="editMode" style="font-size:90%"> \
-			<a href="javascript:void(0)" @click="editMode = false">Done</a> \
+				<a href="javascript:void(0)" @click="editMode = false">Done</a> \
 			</p> \
 		</div> \
 		',
