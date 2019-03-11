@@ -8,8 +8,8 @@
 // @grant        none
 // @require      https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.min.js
 // @run-at document-idle
-// @updateURL   https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.js
-// @downloadURL https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.js
+// @updateURL    https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.user.js
+// @downloadURL  https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.user.js
 // ==/UserScript==
 
 (function () {

@@ -7,8 +7,8 @@
 // @match        *://*/FeatureBuilder/EditTemplate/?templateid=*
 // @grant        none
 // @run-at document-idle
-// @updateURL   https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.js
-// @downloadURL https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.js
+// @updateURL    https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.user.js
+// @downloadURL  https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.user.js
 // ==/UserScript==
 
 $(function(){

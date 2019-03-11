@@ -7,8 +7,8 @@
 // @match        *://*/TemplateList/Index/
 // @grant        GM_addStyle
 // @run-at document-idle
-// @updateURL   https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.js
-// @downloadURL https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.js
+// @updateURL    https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.user.js
+// @downloadURL  https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.user.js
 // ==/UserScript==
 
 $(function(){
