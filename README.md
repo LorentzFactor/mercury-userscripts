@@ -44,11 +44,15 @@ These userscripts are meant to offer some solutions to common inconveniences you
 
 ### Configure availability from template
 
+[**Install**][install-caft]
+
 ![Configure availability from template](docs/images/mercury-configure-availability.png?raw=true "Configure availability from template")
 
 Adds a "Configure Availability" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view, not from the template editing screen.
 
 ### Manage bed space/plan lists from template
+
+[**Install**][install-mbspl]
 
 ![Manage bed space/plan lists from template](docs/images/mercury-manage-bed-plan-lists-from-template.png?raw=true "Manage bed space/plan lists from template")
 
@@ -56,11 +60,15 @@ Adds a "manage bed space/plan lists" option under the "I want to..." menu on the
 
 ### Preview/run template user quick picks
 
+[**Install**][install-uqp]
+
 ![Preview/run template user quick picks](docs/images/mercury-user-quick-picks.gif?raw=true "Preview/run template user quick picks")
 
 Adds one-click user 'quick picks' to the initial preview/run template screen.
 
 ### Run from template
+
+[**Install**][install-rft]
 
 ![Run from template](docs/images/mercury-run-template.png?raw=true "Run from template")
 
@@ -68,17 +76,23 @@ Adds a "Run Template" button to allow running a template directly from the templ
 
 ### Search on enter
 
+[**Install**][install-soe]
+
 ![Search on enter](docs/images/mercury-search-on-enter.gif?raw=true "Search on enter")
 
 When using search filters above lists in the Mercury interface, allow pressing "enter" to start the search.
 
 ### Template quick search
 
+[**Install**][install-tqs]
+
 ![Template quick search](docs/images/mercury-template-quick-search.gif?raw=true "Template quick search")
 
 Adds a search-as-you-type box to the Mercury template list. This will search across all pages of templates.
 
 ### View "used by" for all filters at once
+
+[**Install**][install-vub]
 
 ![View 'used by' for all filters at once](docs/images/mercury-filter-view-used-by-for-all.png?raw=true "View 'used by' for all filters at once")
 
