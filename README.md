@@ -54,3 +54,11 @@ Adds a "Run Template" button to allow running a template directly from the templ
 ![Configure availability from template](docs/images/mercury-configure-availability.png?raw=true "Configure availability from template")
 
 Adds a "Configure Availability" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view, not from the template editing screen.
+
+### Search on enter
+
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js)
+
+![Search on enter](docs/images/mercury-search-on-enter.gif?raw=true "Search on enter")
+
+When using search filters above lists in the Mercury interface, allow pressing "enter" to start the search.
