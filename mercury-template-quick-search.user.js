@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mercury Template Quick Search
 // @namespace    https://github.com/curtgrimes/mercury-userscripts
-// @version      1.0
+// @version      1.0.1
 // @description  Adds a search-as-you-type box to the Mercury template list.
 // @author       Curt Grimes
 // @match        *://*/TemplateList/Index/
@@ -69,21 +69,20 @@ $(function(){
 
             // Highlight matches in shown rows
             $('.highlightQuickSearchMatch').removeClass('highlightQuickSearchMatch'); // undo any previous highlights
-            $('.quickSearchTemplateRowShown').each(function(){
-               $(this).find('.pageTableCell:not(:last-child)').each(function(){ // excludes the last column with the "I want to..." menu
-                   var matchIndex = ($(this).text() || '').toLowerCase().indexOf(query);
-                   if (matchIndex !== -1) {
-                       // This table cell has the match
-                       var cellText = $(this).text();
-                       $(this).html(
-                           cellText.substring(0, matchIndex) // text before match
-                           + '<span class="highlightQuickSearchMatch">'+ cellText.substring(matchIndex, matchIndex + query.length)  +'</span>'
-                           + cellText.substring(matchIndex + query.length) // text after match
-                       );
-                   }
-               });
-
-            });
+            if ($('.quickSearchTemplateRowShown').length <=10) {
+                $('.quickSearchTemplateRowShown .pageTableCell:not(:last-child)').each(function(){ // excludes the last column with the "I want to..." menu
+                    var matchIndex = ($(this).text() || '').toLowerCase().indexOf(query);
+                    if (matchIndex !== -1) {
+                        // This table cell has the match
+                        var cellText = $(this).text();
+                        $(this).html(
+                            cellText.substring(0, matchIndex) // text before match
+                            + '<span class="highlightQuickSearchMatch">'+ cellText.substring(matchIndex, matchIndex + query.length)  +'</span>'
+                            + cellText.substring(matchIndex + query.length) // text after match
+                        );
+                    }
+                });
+            }
         }
         else {
             // No query
