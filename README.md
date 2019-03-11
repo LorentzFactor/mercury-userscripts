@@ -62,3 +62,11 @@ Adds a "Configure Availability" option under the "I want to..." menu on the temp
 ![Search on enter](docs/images/mercury-search-on-enter.gif?raw=true "Search on enter")
 
 When using search filters above lists in the Mercury interface, allow pressing "enter" to start the search.
+
+### View "used by" for all filters at once
+
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js)
+
+![View 'used by' for all filters at once](docs/images/mercury-filter-view-used-by-for-all.png?raw=true "View 'used by' for all filters at once")
+
+Load the 'used by' information for all filters automatically. It will still take a long time, but you don't need to manually click on each filter and look for this information, and wait for each lookup to end before going to the next. You can let it run in the background while you do something else.
