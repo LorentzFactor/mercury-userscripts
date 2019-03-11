@@ -65,7 +65,7 @@ When using search filters above lists in the Mercury interface, allow pressing "
 
 ### View "used by" for all filters at once
 
-[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js)
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-filter-view-used-by-for-all.user.js)
 
 ![View 'used by' for all filters at once](docs/images/mercury-filter-view-used-by-for-all.png?raw=true "View 'used by' for all filters at once")
 
