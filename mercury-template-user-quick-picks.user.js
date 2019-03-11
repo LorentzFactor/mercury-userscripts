@@ -93,7 +93,7 @@
 				handler: function () {
 					this.users.forEach((user, index, arr) => {
 						// Remove any empty, not being edited users
-						if (!user.editing && !user.rmsId) {
+						if (!user.editing && !(user.rmsId || '').trim()) {
 							this.users.splice(index, 1);
 						}
 
