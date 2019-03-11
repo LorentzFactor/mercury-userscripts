@@ -18,7 +18,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 
 ### Template quick search
 
-[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.js)
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.user.js)
 
 ![Template quick search](docs/images/mercury-template-quick-search.gif?raw=true "Template quick search")
 
@@ -26,7 +26,7 @@ Adds a search-as-you-type box to the Mercury template list. This will search acr
 
 ### Preview/run template user quick picks
 
-[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.js)
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.user.js)
 
 ![Preview/run template user quick picks](docs/images/mercury-user-quick-picks.gif?raw=true "Preview/run template user quick picks")
 
@@ -34,7 +34,7 @@ Adds one-click user 'quick picks' to the initial preview/run template screen.
 
 ### Run from template
 
-[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.js)
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-run-from-template.user.js)
 
 ![Run from template](docs/images/mercury-run-template.png?raw=true "Run from template")
 
@@ -42,7 +42,7 @@ Adds a "Run Template" button to allow running a template directly from the templ
 
 ### Configure availability from template
 
-[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-configure-availability-from-template.js)
+[Install](https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-configure-availability-from-template.user.js)
 
 ![Configure availability from template](docs/images/mercury-configure-availability.png?raw=true "Configure availability from template")
 
