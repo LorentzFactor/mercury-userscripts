@@ -24,7 +24,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 
 
 [about-tqs]: #template-quick-search
-[about-uqp]: #preview-run-template-user-quick-picks
+[about-uqp]: #previewrun-template-user-quick-picks
 [about-rft]: #run-from-template
 [about-caft]: #configure-availability-from-template
 [about-soe]: #search-on-enter
