@@ -53,6 +53,8 @@ These userscripts are meant to offer some solutions to common inconveniences you
 
 Adds a "Configure Availability" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view, not from the template editing screen.
 
+<hr/>
+
 ### Living area copy/paste
 
 [**Install**][install-lacp]
@@ -77,6 +79,8 @@ The tool will now go through each area from the source floor and ask about which
 
 For example, if your source floor 3 had rooms 301, 302, and 303 traced, on your destination floor 4, it'll show you the outlines for 301, 302, and 303, and ask you which 4** room you want to map to those traced outlines.
 
+<hr/>
+
 ### Manage bed space/plan lists from template
 
 [**Install**][install-mbspl]
@@ -84,6 +88,8 @@ For example, if your source floor 3 had rooms 301, 302, and 303 traced, on your 
 ![Manage bed space/plan lists from template](docs/images/mercury-manage-bed-plan-lists-from-template.png?raw=true "Manage bed space/plan lists from template")
 
 Adds a "manage bed space/plan lists" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view.
+
+<hr/>
 
 ### Preview/run template user quick picks
 
@@ -93,6 +99,8 @@ Adds a "manage bed space/plan lists" option under the "I want to..." menu on the
 
 Adds one-click user 'quick picks' to the initial preview/run template screen.
 
+<hr/>
+
 ### Run from template
 
 [**Install**][install-rft]
@@ -100,6 +108,8 @@ Adds one-click user 'quick picks' to the initial preview/run template screen.
 ![Run from template](docs/images/mercury-run-template.png?raw=true "Run from template")
 
 Adds a "Run Template" button to allow running a template directly from the template editing screen. As of Mercury 3.0.9 running a template is only possible from the template list view, not from the template editing screen.
+
+<hr/>
 
 ### Search on enter
 
@@ -109,6 +119,8 @@ Adds a "Run Template" button to allow running a template directly from the templ
 
 When using search filters above lists in the Mercury interface, allow pressing "enter" to start the search.
 
+<hr/>
+
 ### Template quick search
 
 [**Install**][install-tqs]
@@ -116,6 +128,8 @@ When using search filters above lists in the Mercury interface, allow pressing "
 ![Template quick search](docs/images/mercury-template-quick-search.gif?raw=true "Template quick search")
 
 Adds a search-as-you-type box to the Mercury template list. This will search across all pages of templates.
+
+<hr/>
 
 ### View "used by" for all filters at once
 
