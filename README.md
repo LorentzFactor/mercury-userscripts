@@ -16,6 +16,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
     | Userscript                 | About                      | Install                    |
     | -------------------------- |:-------------------------- |:-------------------------- |
     | Configure availability from template | [About][about-caft] | [Install][install-caft] |
+    | Living area copy/paste | [About][about-lacp] | [Install][install-lacp] |
     | Manage bed space/plan lists from template | [About][about-mbspl] | [Install][install-mbspl] |
     | Preview/run template user quick picks | [About][about-uqp] | [Install][install-uqp]  |
     | Run from template          | [About][about-rft]         | [Install][install-rft]     |
@@ -31,6 +32,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [about-soe]: #search-on-enter
 [about-vub]: #view-used-by-for-all-filters-at-once
 [about-mbspl]: #manage-bed-spaceplan-lists-from-template
+[about-lacp]: #living-area-copypaste
 
 [install-tqs]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-quick-search.user.js
 [install-uqp]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-template-user-quick-picks.user.js
@@ -39,6 +41,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [install-soe]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js
 [install-vub]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-filter-view-used-by-for-all.user.js
 [install-mbspl]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
+[install-lacp]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-living-area-copy-paste.user.js
 
 ## Userscripts
 
@@ -49,6 +52,30 @@ These userscripts are meant to offer some solutions to common inconveniences you
 ![Configure availability from template](docs/images/mercury-configure-availability.png?raw=true "Configure availability from template")
 
 Adds a "Configure Availability" option under the "I want to..." menu on the template editing screen. As of Mercury 3.0.9 configuring availability of a template is only possible from the template list view, not from the template editing screen.
+
+### Living area copy/paste
+
+[**Install**][install-lacp]
+
+Adds tools for copying/pasting traced living area regions. Useful if you have buildings with multiple floors that have identical layouts. You can avoid having to trace multiple floors over again.
+
+Go to a living area that is already traced and click the "Copy" button:
+
+![Living area copy/paste](docs/images/mercury-living-area-copy-paste-1.png?raw=true "Living area copy/paste")
+
+Go to the area you want to copy to, and click the "Paste" button:
+
+![Living area copy/paste](docs/images/mercury-living-area-copy-paste-2.png?raw=true "Living area copy/paste")
+
+Select a saved area.
+
+![Living area copy/paste](docs/images/mercury-living-area-copy-paste-3.png?raw=true "Living area copy/paste")
+
+The tool will now go through each area from the source floor and ask about which item on the destination floor that you want to map to it.
+
+![Living area copy/paste](docs/images/mercury-living-area-copy-paste-4.png?raw=true "Living area copy/paste")
+
+For example, if your source floor 3 had rooms 301, 302, and 303 traced, on your destination floor 4, it'll show you the outlines for 301, 302, and 303, and ask you which 4** room you want to map to those traced outlines.
 
 ### Manage bed space/plan lists from template
 
