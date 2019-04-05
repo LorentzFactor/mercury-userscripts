@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 
-    if (window.location.href.includes("MercuryLinkTarget")) {
+    if (window.location.href.includes("rms-inc.com")) {
         // We are on a Mercury admin page
 
         document.querySelectorAll('.CollapsibleRoot').forEach(function(collapsibleRoot) {
