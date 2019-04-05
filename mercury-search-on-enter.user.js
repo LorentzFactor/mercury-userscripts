@@ -6,6 +6,7 @@
 // @author       You
 // @match        *://*/*
 // @grant        none
+// @run-at document-idle
 // @update 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/mercury-search-on-enter.user.js
 // @download 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/mercury-search-on-enter.user.js
 // ==/UserScript==
