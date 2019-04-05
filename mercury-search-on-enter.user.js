@@ -7,8 +7,8 @@
 // @match        *://*/*
 // @grant        none
 // @run-at document-idle
-// @updateURL    https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js
-// @downloadURL  https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-search-on-enter.user.js
+// @updateURL    https://raw.github.com/LorentzFactor/mercury-userscripts/blob/master/mercury-search-on-enter.user.js
+// @downloadURL  https://raw.github.com/LorentzFactor/mercury-userscripts/blob/master/mercury-search-on-enter.user.js
 // ==/UserScript==
 
 (function() {
