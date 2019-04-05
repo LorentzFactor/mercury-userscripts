@@ -1,20 +1,19 @@
 // ==UserScript==
-// @name         Mercury Search on Enter
-// @namespace    https://github.com/curtgrimes/mercury-userscripts
-// @version      1.0
-// @description  When using search filters above lists in the Mercury interface, allow pressing "enter" to start the search.
-// @author       Curt Grimes
+// @name         Extended Search on Enter
+// @namespace    http://tampermonkey.net/
+// @version      0.2
+// @description  Works for pop-up windows as well
+// @author       You
 // @match        *://*/*
 // @grant        none
-// @run-at document-idle
-// @updateURL    https://raw.github.com/LorentzFactor/mercury-userscripts/blob/master/mercury-search-on-enter.user.js
-// @downloadURL  https://raw.github.com/LorentzFactor/mercury-userscripts/blob/master/mercury-search-on-enter.user.js
+// @update 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/mercury-search-on-enter.user.js
+// @download 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/mercury-search-on-enter.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    if (document.querySelectorAll('.RMSScriptEnabled').length) {
+    if (window.location.href.includes("MercuryLinkTarget")) {
         // We are on a Mercury admin page
 
         document.querySelectorAll('.CollapsibleRoot').forEach(function(collapsibleRoot) {
