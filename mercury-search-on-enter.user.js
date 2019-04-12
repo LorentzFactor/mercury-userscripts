@@ -19,7 +19,7 @@
 
         document.querySelectorAll('.CollapsibleRoot').forEach(function(collapsibleRoot) {
             // For each collapsible
-            var searchButton = collapsibleRoot.querySelector('.CollapsibleContents > div > #Search, .CollapsibleContents > div > #ShowMeList, .CollapsibleContents > #ShowMeList');
+            var searchButton = collapsibleRoot.querySelector('.CollapsibleContents > div > #Search, .CollapsibleContents > div > #ShowMeList, .CollapsibleContents > #ShowMeList, #search');
 
             if (searchButton) {
                 // It has a 'show me list'/'search' button. Allow pressing enter in any of its inputs
