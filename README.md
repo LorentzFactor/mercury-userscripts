@@ -23,6 +23,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
     | Search on enter            | [About][about-soe]         | [Install][install-soe]     |
     | Template quick search      | [About][about-tqs]         | [Install][install-tqs]     |
     | View "used by" for all filters at once            | [About][about-vub]         | [Install][install-vub]     |
+    | Have a print button next to an email in the correspondence menu            | [About]         | [Install][install-epb]     |
 
 
 [about-tqs]: #template-quick-search
@@ -42,6 +43,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [install-vub]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-filter-view-used-by-for-all.user.js
 [install-mbspl]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
 [install-lacp]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-living-area-copy-paste.user.js
+[install-epb]: https://raw.githubusercontent.com/LorentzFactor/mercury-userscripts/raw/master/email-print-button.js
 
 ## Userscripts
 
