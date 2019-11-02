@@ -43,7 +43,7 @@ These userscripts are meant to offer some solutions to common inconveniences you
 [install-vub]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-filter-view-used-by-for-all.user.js
 [install-mbspl]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-manage-bed-plan-lists-from-template.user.js
 [install-lacp]: https://raw.githubusercontent.com/curtgrimes/mercury-userscripts/master/mercury-living-area-copy-paste.user.js
-[install-epb]: https://raw.githubusercontent.com/LorentzFactor/mercury-userscripts/master/email-print-button.js
+[install-epb]: https://raw.githubusercontent.com/LorentzFactor/mercury-userscripts/master/email-print-button.user.js
 
 ## Userscripts
 
