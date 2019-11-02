@@ -6,8 +6,8 @@
 // @author       Colman Bouton
 // @match        *://*/*
 // @grant        none
-// @update 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/email-print-button.js
-// @download 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/email-print-button.js
+// @update 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/email-print-button.user.js
+// @download 	https://github.com/LorentzFactor/mercury-userscripts/raw/master/email-print-button.user.js
 // ==/UserScript==
 
 var emailTaken = false;
