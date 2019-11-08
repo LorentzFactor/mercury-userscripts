@@ -60,7 +60,7 @@ function addPrintButtonToRow(row, i){
 	<button id = "'
     +nameofbutton+
     '" href="https://bsc.rms-inc.com/CorrespondenceHistory/MercuryLinkIndex?mltakey=X8d572681a4634a6d8b35aba6f2e658db#"\
-	class="RMSGridColumnActionButton ToolButtonViewDocument RMSGridDocumentViewButton" title="View correspondence">\
+	class="RMSGridColumnActionButton ToolButtonPrintItem RMSGridPrintButton" title="Print Email">\
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>';
     if(divelement.children.length < 3)
     {
