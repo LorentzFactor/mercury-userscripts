@@ -11,12 +11,14 @@
 // ==/UserScript==
 
 var emailTaken = false;
-var printButtonsAdded = false;
+const observer = new MutationObserver(addPrintButtons);
+const config = { attributes: true, childList: true, subtree: true };
+
 (function() {
     'use strict';
 	   if (window.location.href.includes("rms-inc.com/CorrespondenceHistory")) {
 		    //window.addEventListener('load', addPrintButtons());
-           window.addEventListener('load', ()=>{console.log('loaded')});
+            window.addEventListener('load', ()=>{console.log('loaded')});
 			document.querySelector("#ShowMeList").onclick(addPrintButtons());
 	   }
 })();
@@ -28,18 +30,15 @@ async function addPrintButtons(){
             console.log("tableBody is still null");
             sleeper(1000).then(addPrintButtons);
         }
-        else if (!printButtonsAdded){
-            //console.log("table: " + table);
-            //console.log(table.rows);
+        else{
             var tableRows = table.rows;
             //skip over first two not used for data
             console.log("length: " + tableRows.length);
             for(var i = 2; i < tableRows.length; i++){
                  addPrintButtonToRow(tableRows[i], i);
             }
-            //table.onchange = addPrintButtons();
+            observer.observe(table, config);
         }
-        //table.onchange = addPrintButtons();
     }
     catch(error){
         console.log(error);
